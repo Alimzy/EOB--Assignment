@@ -1,24 +1,18 @@
-import java. util.Scanner;
-
-public class TwelveDaysOfChristmas{
-public static void main(String[] args){
-
-System.out.println(christmasSong());
-
-}
+const prompt = require('prompt-sync')();
 
 
 
-public static boolean christmasSong(){
-Scanner input = new Scanner(System.in);
 
-boolean count = true;
+function christmasSong(){
+
+let count = true
+
 while(count){
 
 
-System.out.println(" Welcome to the best App for the Lyrics of the song 'Twelve Days Of Christmas' ");
+console.log(" Welcome to the best App for the Lyrics of the song 'Twelve Days Of Christmas' ");
 
-String menu = """
+let menu = `
 
 1. First Day
 2. Second Day
@@ -34,202 +28,194 @@ String menu = """
 12. Twelfth Day
 0. Exit program
 
-""";
-System.out.println(menu);
+`;
+console.log(menu);
 
-System.out.println("Enter an options sir/ma: ");
-int menuCase = input.nextInt();
+
+let menuCase = parseInt(prompt("Enter an options sir/ma: "))
 
 
 switch(menuCase){
-    case 1->{
+    case 1:
 
-    String firstDay = """
+    let firstDay = `
 
     On the first day of Christmas
     my true love sent to me
-    
 
-    """;
-   System.out.println(firstDay);
+`   
 
-}
+   console.log(firstDay);break
 
 
-    case 2->{
-    String secondDay = """
+
+    case 2:
+    let secondDay = `
 
     On the second day of Christmas,
     my true love sent to me
     
-    """;
-    System.out.println(secondDay);
-}
+   `
+    console.log(secondDay);break;
 
 
-    case 3->{
-    String thirdDay = """
+
+    case 3:
+    let thirdDay = `
 
     On the third day of Christmas,
     my true love sent to me
     
-    """;
-    System.out.println(thirdDay);
-}
+    `
+    console.log(thirdDay);break;
 
-    case 4->{
-    String fourthDay = """
+
+    case 4:
+    let fourthDay = `
 
     On the fourth day of Christmas,
     my true love sent to me
     
 
-    """;
-    System.out.println(fourthDay);
+    `
+   console.log(fourthDay);break;
 
-}
 
-    case 5->{
-    String fifthDay = """
+
+    case 5:
+    let fifthDay = `
 
     On the fifth day of Christmas,
     my true love sent to me
     
 
-    """;
-    System.out.println(fifthDay);
+    `
+    console.log(fifthDay);break;
 
-}
 
-    case 6->{
-    String sixthDay = """
+
+    case 6:
+    let sixthDay = `
 
     On the sixth day of Christmas,
     my true love sent to me
     
 
-    """;
-    System.out.println(sixthDay);
+    `
+    console.log(sixthDay);break;
 
-}
-
-    case 7->{
-    String seventhDay = """
-
+    case 7:
+    let seventhDay = `
     On the seventh day of Christmas,
     my true love sent to me
     
 
-    """;
-System.out.println(seventhDay);
+    `
+    console.log(seventhDay);break;
 
 
-}
-
-    case 8->{
-    String eightDay = """
+    case 8:
+    let eightDay = `
 
     On the eighth day of Christmas,
     my true love sent to me
   
-    """;
-    System.out.println(eightDay);
+    `
+    console.log(eightDay);break;
 
-}
-
-    case 9->{
-    String ninethDay = """
+    case 9:
+    let ninethDay = `
 
     On the ninth day of Christmas,
     my true love sent to me
   
-    """;
+    `
 
-    System.out.println(ninethDay);
+    console.log(ninethDay);break;
 
-    }
-    case 10 ->{
-    String tenthDay = """
+    
+    case 10:
+    let tenthDay = `
 
     On the tenth day of Christmas,
     my true love sent to me
     
 
-    """;
-    System.out.println(tenthDay);
-}
+    `
+    console.log(tenthDay);break;
 
-    case 11 ->{
-    String eleventhDay = """
+
+    case 11:
+    let eleventhDay = `
     
     On the eleventh day of Christmas,
     my true love sent to me
 
-    """;
-    System.out.println(eleventhDay);
+    `
+    console.log(eleventhDay);break;
 
 
-}
 
-    case 12->{
+    case 12:
 
       
-    String twelfthDay = """
+    let twelfthDay = `
 
     On the twelfth day of Christmas,
     my true love sent to me
 
 
-    """;
+    `
 
-    System.out.println(twelfthDay);
-}
+    console.log(twelfthDay);break;
+    
+    case 0:
+                
+         console.log("This is the end of your programme")
+          count = false;
+           break;
+    
 
-    case 0->{
-    count = false;
-    break;
-    }
+
+       
 
 }
 
 
 switch(menuCase){
-    case 1->{
+    case 1:
 
-    String firstDay = """
+    let firstDay = `
    
     A partridge in a pear tree
 
-    """;
-   System.out.println(firstDay);
-
-}
+    `
+   console.log(firstDay);break;
 
 
-    case 2->{
-    String secondDay = """
+    case 2:
+    let secondDay = `
     
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(secondDay);
-}
+    `
+    console.log(secondDay);break;
 
 
-    case 3->{
-    String thirdDay = """
+
+    case 3:
+    let thirdDay = `
    
     Three French hens,
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(thirdDay);
-}
+    `
+    console.log(thirdDay);break;
 
-    case 4->{
-    String fourthDay = """
+    case 4:
+    let fourthDay = `
 
     
     Four calling birds,
@@ -237,13 +223,12 @@ switch(menuCase){
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(fourthDay);
+    `
+    console.log(fourthDay);break;
 
-}
 
-    case 5->{
-    String fifthDay = """
+    case 5:
+    let fifthDay = `
    
     Five gold rings,
     Four calling birds,
@@ -251,13 +236,12 @@ switch(menuCase){
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(fifthDay);
+    `
+    console.log(fifthDay);break;
 
-}
 
-    case 6->{
-    String sixthDay = """
+    case 6:
+    let sixthDay = `
 
     
     Six geese a-laying,
@@ -267,13 +251,11 @@ switch(menuCase){
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(sixthDay);
+    `
+    console.log(sixthDay);break;
 
-}
-
-    case 7->{
-    String seventhDay = """
+    case 7:
+    let seventhDay = `
  
     Seven swans a-swimming,
     Six geese a-laying,
@@ -283,14 +265,11 @@ switch(menuCase){
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-System.out.println(seventhDay);
+    `
+    console.log(seventhDay);break;
 
-
-}
-
-    case 8->{
-    String eightDay = """
+    case 8:
+    let eightDay = `
 
     
     Eight maids a-milking,
@@ -302,13 +281,12 @@ System.out.println(seventhDay);
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(eightDay);
+    `
+    console.log(eightDay);break;
 
-}
 
-    case 9->{
-    String ninethDay = """
+    case 9:
+    let ninethDay = `
 
     Nine ladies dancing,
     Eight maids a-milking,
@@ -320,13 +298,12 @@ System.out.println(seventhDay);
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
+    `
 
-    System.out.println(ninethDay);
+    console.log(ninethDay);break;
 
-    }
-    case 10 ->{
-    String tenthDay = """
+    case 10:
+    let tenthDay = `
   
     Ten lords a-leaping,
     Nine ladies dancing,
@@ -339,12 +316,11 @@ System.out.println(seventhDay);
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(tenthDay);
-}
+    `
+    console.log(tenthDay);break;
 
-    case 11 ->{
-    String eleventhDay = """
+    case 11:
+    let eleventhDay = `
     
     Eleven pipers piping,
     Ten lords a-leaping,
@@ -358,16 +334,15 @@ System.out.println(seventhDay);
     Two turtle doves,
     And a partridge in a pear tree.
 
-    """;
-    System.out.println(eleventhDay);
+    `
+    console.log(eleventhDay);break;
 
 
-}
 
-    case 12->{
+    case 12:
 
       
-    String twelfthDay = """
+    let twelfthDay = `
     
     Twelve drummers drumming,
     Eleven pipers piping,
@@ -383,30 +358,18 @@ System.out.println(seventhDay);
     And a partridge in a pear tree!
 
 
-    """;
+    `
 
-    System.out.println(twelfthDay);
-}
+    console.log(twelfthDay);break;
 
-    case 0->{
-    System.out.println("This is the end of the programme");
-
-    break;
-    }
-
+    
 }
 
 }
 
 
-
-
-return count;
-
-
-
-
 }
 
 
-}
+christmasSong()
+
